@@ -10,7 +10,6 @@ public interface RegisterService {
 
     Register getById(Long registerId);
 
-
     Register create(Register register);
 
     Register getByMonedaActual(String monedaActual);

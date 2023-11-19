@@ -16,6 +16,5 @@ public interface RegisterRepository extends JpaRepository<Register, Long> {
 
     Register findByFechaDesembolso (String fechaDesembolso);
 
-    Register findByDiaDePago (Integer diaDePago);
 
 }

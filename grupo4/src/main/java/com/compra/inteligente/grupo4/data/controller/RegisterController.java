@@ -4,11 +4,9 @@ package com.compra.inteligente.grupo4.data.controller;
 import com.compra.inteligente.grupo4.data.domain.service.RegisterService;
 import com.compra.inteligente.grupo4.data.mapping.RegisterMapper;
 import com.compra.inteligente.grupo4.data.resource.RegisterResource;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -41,7 +39,7 @@ public class RegisterController {
     }
 
     @PostMapping
-    public RegisterResource createRegister(RegisterResource resource){
+    public RegisterResource createRegister(@Valid @RequestBody RegisterResource resource){
         return mapper.toResource(registerService.create(mapper.toModel(resource)));
     }
 

@@ -10,8 +10,6 @@ public interface GeneralDataService {
 
     GeneralData getById(Long generalDataId);
 
-
-
     GeneralData getByIdUsuario(Long idUsuario);
 
     GeneralData create(GeneralData generalData);

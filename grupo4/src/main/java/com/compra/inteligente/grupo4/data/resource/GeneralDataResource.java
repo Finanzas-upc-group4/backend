@@ -16,15 +16,15 @@ import javax.validation.constraints.NotNull;
 
 public class GeneralDataResource {
 
-
-    private Float valorDelVehiculo;
     private Long id;
+    private Float valorDelVehiculo;
     private Float cuotaInicial;
-    private Float TEA; //tasa efectiva anual
+    private Float tea; //tasa efectiva anual
     private Integer cuotasAlAnio;
     private Integer periodoDePago;
-    private Float TSD; //tasa seguro desgravamen
-    private Float TSVA; //tasa seguro vehicular anual
+    private Float tsd; //tasa seguro desgravamen
+    private Float tsva; //tasa seguro vehicular anual
     private Boolean envioFisicoEstadoDeCuenta;
     private Long idUsuario;
+
 }

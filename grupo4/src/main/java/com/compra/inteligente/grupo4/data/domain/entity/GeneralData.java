@@ -1,6 +1,7 @@
 package com.compra.inteligente.grupo4.data.domain.entity;
 
 
+import com.compra.inteligente.grupo4.shared.domain.model.BaseModel;
 import io.cucumber.java.mk_latn.No;
 import lombok.*;
 
@@ -14,7 +15,7 @@ import javax.validation.constraints.NotNull;
 @Entity
 @Table(name = "general_data")
 @Builder
-public class GeneralData {
+public class GeneralData extends BaseModel {
 
 
     @Id
@@ -25,29 +26,19 @@ public class GeneralData {
     @NotNull
     private Float cuotaInicial;
     @NotNull
-    private Float TEA; //tasa efectiva anual
+    private Float tea; //tasa efectiva anual
     @NotNull
     private Integer cuotasAlAnio;
     @NotNull
     private Integer periodoDePago;
     @NotNull
-    private Float TSD; //tasa seguro desgravamen
+    private Float tsd; //tasa seguro desgravamen
     @NotNull
-    private Float TSVA; //tasa seguro vehicular anual
+    private Float tsva; //tasa seguro vehicular anual
     @NotNull
     private Boolean envioFisicoEstadoDeCuenta;
     @NotNull
     private Long idUsuario;
 
 
-
- /*   valor del vehiculo
-    cuota inicial
-    monto de prestamo
-    tasa efectiva anual
-    cuotas al año
-    periodo de pago
-    tasa seguro des
-    tasa seguro vehicular anual
-    envio fisico de estado de cuenta*/
 }
