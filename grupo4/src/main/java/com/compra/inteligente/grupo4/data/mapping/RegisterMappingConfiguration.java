@@ -8,5 +8,5 @@ import org.springframework.context.annotation.Configuration;
 public class RegisterMappingConfiguration {
 
     @Bean
-    public EnhancedModelMapper modelMapper(){ return new EnhancedModelMapper();}
+    public RegisterMapper shipmentMapper(){ return new RegisterMapper();}
 }

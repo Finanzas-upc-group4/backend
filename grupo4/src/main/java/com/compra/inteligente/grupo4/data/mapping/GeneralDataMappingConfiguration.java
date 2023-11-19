@@ -9,5 +9,5 @@ import org.springframework.context.annotation.Configuration;
 public class GeneralDataMappingConfiguration {
 
     @Bean
-    public EnhancedModelMapper modelMapper(){ return new EnhancedModelMapper();}
+    public GeneralDataMapper generalDataMapper(){ return new GeneralDataMapper();}
 }
