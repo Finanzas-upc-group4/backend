@@ -9,6 +9,4 @@ public class MappingConfiguration {
 
     @Bean
     public RegisterMapper shipmentMapper(){ return new RegisterMapper();}
-
-
 }

@@ -5,11 +5,15 @@ import com.compra.inteligente.grupo4.data.domain.persistence.RegisterRepository;
 import com.compra.inteligente.grupo4.data.domain.service.RegisterService;
 import com.compra.inteligente.grupo4.shared.exception.ResourceNotFoundException;
 import com.compra.inteligente.grupo4.shared.exception.ResourceValidationException;
+import org.springframework.stereotype.Service;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.Validator;
 import java.util.List;
 import java.util.Set;
+
+
+@Service
 
 public class RegisterServiceImpl implements RegisterService {
 

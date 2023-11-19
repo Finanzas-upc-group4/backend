@@ -26,6 +26,10 @@ public class RegisterMapper implements Serializable {
 
     public List<RegisterResource> modelListPage(List<Register> modelList) {
         return mapper.mapList(modelList, RegisterResource.class);
-    }
 
+
+    }
+    public Register toModel(RegisterResource resource) {
+        return mapper.map(resource, Register.class);
+    }
 }
