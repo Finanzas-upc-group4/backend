@@ -18,6 +18,8 @@ public class CreateGeneralDataResource {
     @NotNull
     private Float cuotaInicial;
     @NotNull
+    private Float montoPrestamo;
+    @NotNull
     private Float tea; //tasa efectiva anual
     @NotNull
     private Integer cuotasAlAnio;
@@ -28,7 +30,7 @@ public class CreateGeneralDataResource {
     @NotNull
     private Float tsva; //tasa seguro vehicular anual
     @NotNull
-    private Boolean envioFisicoEstadoDeCuenta;
+    private Integer envioFisicoEstadoDeCuenta;
     @NotNull
     private Long idUsuario;
 }

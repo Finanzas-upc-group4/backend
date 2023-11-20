@@ -19,12 +19,13 @@ public class GeneralDataResource {
     private Long id;
     private Float valorDelVehiculo;
     private Float cuotaInicial;
+    private Float montoPrestamo;
     private Float tea; //tasa efectiva anual
     private Integer cuotasAlAnio;
     private Integer periodoDePago;
     private Float tsd; //tasa seguro desgravamen
     private Float tsva; //tasa seguro vehicular anual
-    private Boolean envioFisicoEstadoDeCuenta;
+    private Integer envioFisicoEstadoDeCuenta;
     private Long idUsuario;
 
 }

@@ -21,17 +21,22 @@ public class RegisterController {
         this.mapper = mapper;
     }
 
+    @GetMapping
     public List<RegisterResource> getAllRegister(){
         return mapper.modelListPage(registerService.getAll());
     }
-    @GetMapping("{registerId}")
 
-    public RegisterResource getRegisterById(Long registerId){
+    @GetMapping("{registerId}")
+    public RegisterResource getRegisterById(@PathVariable Long registerId){
         return mapper.toResource(registerService.getById(registerId));
     }
     @GetMapping("/monedaActual/{monedaActual}")
     public RegisterResource getRegisterByMonedaActual(String monedaActual){
         return mapper.toResource(registerService.getByMonedaActual(monedaActual));
+    }
+    @GetMapping("/historial/{userId}")
+    public List<RegisterResource> getAllRegisterByUserId(@PathVariable Long userId){
+        return mapper.modelListPage(registerService.getAllByUserId(userId));
     }
     @GetMapping("/fechaDesembolso/{fechaDesembolso}")
     public RegisterResource getRegisterByFechaDesembolso(String fechaDesembolso){

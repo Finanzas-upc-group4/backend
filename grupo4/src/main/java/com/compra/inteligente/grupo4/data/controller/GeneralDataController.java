@@ -29,12 +29,12 @@ public class GeneralDataController {
     }
 
     @GetMapping("{generalDataId}")
-    public GeneralDataResource getGeneralDataById(Long generalDataId){
+    public GeneralDataResource getGeneralDataById(@PathVariable Long generalDataId){
         return mapper.toResource(generalDataService.getById(generalDataId));
     }
 
     @GetMapping("/idUsuario/{idUsuario}")
-    public GeneralDataResource getGeneralDataByIdUsuario(Long idUsuario){
+    public GeneralDataResource getGeneralDataByIdUsuario(@PathVariable  Long idUsuario){
         return mapper.toResource(generalDataService.getByIdUsuario(idUsuario));
     }
 

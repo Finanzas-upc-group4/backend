@@ -48,6 +48,16 @@ public class RegisterServiceImpl implements RegisterService {
     }
 
     @Override
+    public Register getByUserId(Long userId) {
+        return RegisterRepository.findByUserId(userId);
+    }
+
+    @Override
+    public List<Register> getAllByUserId(Long userId) {
+        return RegisterRepository.findAllByUserId(userId);
+    }
+
+    @Override
     public Register create(Register register) {
         Set<ConstraintViolation<Register>> violations = validator.validate(register);
         if (!violations.isEmpty()) {

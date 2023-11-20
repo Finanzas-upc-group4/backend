@@ -30,5 +30,7 @@ public class Register extends BaseModel {
     private String fechaDesembolso;
     @NotNull
     private Integer diaDePago;
+    @NotNull
+    private Long userId;
 
 }

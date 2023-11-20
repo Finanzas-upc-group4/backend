@@ -20,4 +20,6 @@ public class CreateRegisterResource {
     private String fechaDesembolso;
     @NotNull
     private Integer diaDePago;
+    @NotNull
+    private Long userId;
 }

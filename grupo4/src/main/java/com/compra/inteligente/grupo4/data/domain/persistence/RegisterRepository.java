@@ -4,6 +4,7 @@ import com.compra.inteligente.grupo4.data.domain.entity.Register;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Optional;
 
 
@@ -16,5 +17,8 @@ public interface RegisterRepository extends JpaRepository<Register, Long> {
 
     Register findByFechaDesembolso (String fechaDesembolso);
 
+    Register findByUserId (Long userId);
 
+
+    List<Register> findAllByUserId(Long userId);
 }

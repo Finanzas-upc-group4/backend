@@ -16,6 +16,8 @@ public interface RegisterService {
 
     Register getByFechaDesembolso(String fechaDesembolso);
 
+    Register getByUserId(Long userId);
 
+    List<Register> getAllByUserId(Long userId);
 
 }
